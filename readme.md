@@ -1,0 +1,3 @@
+# HLTV Spoiler Hider
+
+

@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "HLTV CS2 Spoiler Hider",
+    "version": "1.0",
+    "description": "Hides spoilers for CS2 matches on HLTV.",
+    "permissions": [
+      "storage",
+      "activeTab",
+      "tabs"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://www.hltv.org/*"],
+        "js": ["content.js"],
+        "run_at": "document_start"
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "128": "icon-128.png"
+      }
+    }
+  }
+  
